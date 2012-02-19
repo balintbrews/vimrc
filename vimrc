@@ -233,6 +233,17 @@ let Tlist_Process_File_Always=1
 let Tlist_Show_One_File = 1
 " }}}
 
+" Load a tag file {{{
+" Loads a tag file from ~/.vim.tags/, based on the argument provided. The
+" command "Ltag"" is mapped to this function.
+:function! LoadTags(file)
+:   let tagspath = $HOME . "/.vim.tags/" . a:file
+:   let tagcommand = 'set tags+=' . tagspath
+:   execute tagcommand
+:endfunction
+:command! -nargs=1 Ltag :call LoadTags("<args>")
+" }}}
+
 " Pulse cursor line {{{
 function! PulseCursorLine()
     let current_window = winnr()
