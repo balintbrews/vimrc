@@ -219,10 +219,16 @@ endif
 " The default ctags in /usr/bin on the Mac is GNU ctags, so change it to the
 " exuberant ctags version in /usr/local/bin
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+" Enable the menu in GUI mode
 let Tlist_Show_Menu=1
+" Set the width of the Taglist window
 let Tlist_WinWidth=40
+" Settings for PHP
 let tlist_php_settings='php;c:class;f:function'
+" Process files even when the taglist window is not open
 let Tlist_Process_File_Always=1
+" Display the tags defined only in the current buffer
+let Tlist_Show_One_File = 1
 " }}}
 
 " Pulse cursor line {{{
