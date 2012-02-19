@@ -133,9 +133,11 @@ nmap <silent> <leader>/ :nohlsearch<CR>
 nmap <leader>z :%s#\<<C-r>=expand("<cword>")<CR>\>#
 
 " Keep search matches in the middle of the window and pulse the line when moving
-" to them.
-nnoremap n n:call PulseCursorLine()<cr>
-nnoremap N N:call PulseCursorLine()<cr>
+" to them. This doesn't look so great in a non-GUI environment though.
+if has("gui_running")
+  nnoremap n n:call PulseCursorLine()<cr>
+  nnoremap N N:call PulseCursorLine()<cr>
+endif
 
 " Quickly get out of insert mode without your fingers having to leave the
 " home row (either use 'jj' or 'jk')
