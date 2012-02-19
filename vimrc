@@ -161,6 +161,9 @@ nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 " Reselect text that was just pasted with ,v
 nnoremap <leader>v V`]
 
+" Toggle Taglist window
+nnoremap <leader>tt :TlistToggle<CR>
+
 " }}}
 
 " Conflict markers {{{
