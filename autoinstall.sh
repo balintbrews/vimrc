@@ -22,6 +22,10 @@ cd vimrc
 git submodule init
 git submodule update
 
+# Compile command-t for the current platform
+cd vim/bundle/command-t/ruby/command-t
+(ruby extconf.rb && make clean && make) || warn "Ruby compilation failed. Ruby not installed, maybe?"
+
 # Symlink ~/.vim and ~/.vimrc
 cd ~
 ln -s "$INSTALL_TO/vimrc/vimrc" .vimrc
