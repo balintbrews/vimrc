@@ -199,6 +199,7 @@ if has("gui_running")
   set guioptions=egmrLt
   set guioptions-=L
 else
+    colorscheme Tomorrow-Night
     set bg=dark
 endif
 " }}}
