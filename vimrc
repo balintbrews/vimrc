@@ -210,6 +210,18 @@ else
 endif
 " }}}
 
+" Plugin specific settings {{{
+
+" Taglist
+" The default ctags in /usr/bin on the Mac is GNU ctags, so change it to the
+" exuberant ctags version in /usr/local/bin
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let Tlist_Show_Menu=1
+let Tlist_WinWidth=40
+let tlist_php_settings='php;c:class;f:function'
+let Tlist_Process_File_Always=1
+" }}}
+
 " Pulse cursor line {{{
 function! PulseCursorLine()
     let current_window = winnr()
