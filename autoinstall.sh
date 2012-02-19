@@ -27,4 +27,7 @@ cd ~
 ln -s "$INSTALL_TO/vimrc/vimrc" .vimrc
 ln -s "$INSTALL_TO/vimrc/vim" .vim
 
+echo "-------------------------------------------------------------------------------"
 echo "Installed and configured .vim, have fun!"
+echo "If you want to push code to the balintk/vimrc repository, run this command:"
+echo "cd ~/Projects/vimrc; git remote set-url origin git@github.com:balintk/vimrc.git"
