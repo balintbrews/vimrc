@@ -219,6 +219,8 @@ endif
 " The default ctags in /usr/bin on the Mac is GNU ctags, so change it to the
 " exuberant ctags version in /usr/local/bin
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+" Quit when TagList is the last open window
+let Tlist_Exit_OnlyWindow=1
 " Enable the menu in GUI mode
 let Tlist_Show_Menu=1
 " Set the width of the Taglist window
