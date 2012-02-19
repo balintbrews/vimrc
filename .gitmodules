@@ -10,3 +10,6 @@
 [submodule "vim/bundle/tomorrow"]
 	path = vim/bundle/tomorrow
 	url = https://github.com/chriskempson/Vim-Tomorrow-Theme.git
+[submodule "vim/bundle/taglist"]
+	path = vim/bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
