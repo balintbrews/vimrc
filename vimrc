@@ -65,7 +65,6 @@ set cmdheight=2                 " use a status bar that is 2 rows high
 
 " Folding rules {{{
 set nofoldenable                " start out without any folding
-set foldcolumn=2                " add a fold column
 set foldmethod=marker           " detect triple-{ style fold markers
 set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
                                 " which commands trigger auto-unfold
