@@ -16,14 +16,21 @@ die() {
 
 cd "$INSTALL_TO"
 git clone git://github.com/balintk/vimrc.git
-cd vimrc
+cd vimrc/vim/bundle
 
 # Download vim plugin bundles
-git submodule init
-git submodule update
+
+# Jellybeans color scheme
+git clone https://github.com/nanotech/jellybeans.vim.git jellybeans
+# Solarized color scheme
+git clone https://github.com/altercation/vim-colors-solarized.git solarized
+# Tomorrow color scheme
+git clone https://github.com/chriskempson/vim-tomorrow-theme.git tomorrow
+# Taglist
+git clone https://github.com/vim-scripts/taglist.vim.git taglist
 
 # Compile command-t for the current platform
-cd vim/bundle/command-t/ruby/command-t
+cd command-t/ruby/command-t
 (ruby extconf.rb && make clean && make) || warn "Ruby compilation failed. Ruby not installed, maybe?"
 
 # Symlink ~/.vim and ~/.vimrc
