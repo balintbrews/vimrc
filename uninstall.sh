@@ -9,5 +9,5 @@ echo "~/.vim folder has been deleted."
 rm -rf .vimrc
 echo "~/.vimrc has been deleted."
 echo "If you want to install again, run the following command:"
-echo "wget -O - https://raw.github.com/balintk/vimrc/master/autoinstall.sh | sh"
+echo "wget -O - https://raw.github.com/balintk/vimrc/master/install.sh | sh"
 
