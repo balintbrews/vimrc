@@ -1,7 +1,6 @@
 "
 " Personal preference .vimrc file
 " Maintained by Bálint Kléri <balint@kleri.hu>
-" Mainly based on Vincent Driessen's vimrc: https://raw.github.com/nvie/vimrc/master/vimrc
 "
 
 " Use vim settings, rather then vi settings
@@ -25,7 +24,7 @@ if has("autocmd")
 endif
 " }}}
 
-" Editing behaviour {{{
+" Editing behavior {{{
 set showmode                    " always show what mode we're currently editing in
 set tabstop=2                   " a tab is two spaces
 set softtabstop=4               " when hitting <BS>, pretend like a tab is removed, even if spaces
