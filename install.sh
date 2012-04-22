@@ -1,5 +1,5 @@
 #!/bin/sh
-INSTALL_TO=~
+INSTALL_TO=${HOME}
 
 warn() {
     echo "$1" >&2
