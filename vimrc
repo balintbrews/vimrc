@@ -200,15 +200,14 @@ let php_folding = 1
 
 " Appearance {{{
 if has("gui_running")
-  colorscheme jellybeans
+  colorscheme solarized
   set cursorline
   set guifont=Monaco:h12
   set guioptions=egmrLt
   set guioptions-=L
 else
-    colorscheme jellybeans
+    colorscheme Tomorrow-Night
     set bg=dark
-    set cursorline
 endif
 " }}}
 
