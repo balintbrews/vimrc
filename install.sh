@@ -26,6 +26,8 @@ git clone https://github.com/nanotech/jellybeans.vim.git jellybeans
 git clone https://github.com/altercation/vim-colors-solarized.git solarized
 # Tomorrow color scheme
 git clone https://github.com/chriskempson/vim-tomorrow-theme.git tomorrow
+# Powerline
+git clone https://github.com/Lokaltog/vim-powerline.git
 # Taglist
 git clone https://github.com/vim-scripts/taglist.vim.git taglist
 

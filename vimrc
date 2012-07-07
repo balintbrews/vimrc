@@ -199,15 +199,17 @@ let php_folding = 1
 " }}}
 
 " Appearance {{{
+let g:Powerline_symbols = 'fancy'
 if has("gui_running")
-  colorscheme solarized
+  colorscheme jellybeans
   set cursorline
   set guifont=Monaco:h12
   set guioptions=egmrLt
   set guioptions-=L
 else
-    colorscheme Tomorrow-Night
+    colorscheme jellybeans
     set bg=dark
+    set cursorline
 endif
 " }}}
 
