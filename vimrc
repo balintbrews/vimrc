@@ -199,7 +199,6 @@ let php_folding = 1
 " }}}
 
 " Appearance {{{
-let g:Powerline_symbols = 'fancy'
 if has("gui_running")
   colorscheme jellybeans
   set cursorline

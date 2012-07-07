@@ -28,6 +28,8 @@ git clone https://github.com/altercation/vim-colors-solarized.git solarized
 git clone https://github.com/chriskempson/vim-tomorrow-theme.git tomorrow
 # Powerline
 git clone https://github.com/Lokaltog/vim-powerline.git
+# Syntastic
+git clone https://github.com/scrooloose/syntastic.git
 # Taglist
 git clone https://github.com/vim-scripts/taglist.vim.git taglist
 
