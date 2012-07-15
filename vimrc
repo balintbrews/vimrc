@@ -202,8 +202,10 @@ if has("gui_running")
   set guioptions=egmrLt
   set guioptions-=L
 else
-    colorscheme Tomorrow-Night
+    "colorscheme Tomorrow-Night
+    colorscheme solarized
     set bg=dark
+    set cursorline
 endif
 " }}}
 
