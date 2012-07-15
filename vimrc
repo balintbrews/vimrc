@@ -141,11 +141,6 @@ if has("gui_running")
   nnoremap N N:call PulseCursorLine()<cr>
 endif
 
-" Quickly get out of insert mode without your fingers having to leave the
-" home row (either use 'jj' or 'jk')
-inoremap jj <Esc>
-inoremap jk <Esc>
-
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
 
