@@ -32,6 +32,8 @@ git clone https://github.com/Lokaltog/vim-powerline.git
 git clone https://github.com/scrooloose/syntastic.git
 # Taglist
 git clone https://github.com/vim-scripts/taglist.vim.git taglist
+# DBGp Remote Debugger Interface
+git clone https://github.com/vim-scripts/DBGp-Remote-Debugger-Interface.git
 
 # Compile command-t for the current platform
 cd command-t/ruby/command-t
