@@ -35,10 +35,6 @@ git clone https://github.com/vim-scripts/taglist.vim.git taglist
 # DBGp Remote Debugger Interface
 git clone https://github.com/jsoriano/vim-dbgp.git
 
-# Compile command-t for the current platform
-cd command-t/ruby/command-t
-(ruby extconf.rb && make clean && make) || warn "Ruby compilation failed. Ruby not installed, maybe?"
-
 # Symlink ~/.vim and ~/.vimrc
 cd ~
 ln -s "$INSTALL_TO/vimrc/vimrc" .vimrc
