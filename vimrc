@@ -167,6 +167,10 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 nmap <silent> <leader>c /^\(<\\|=\\|>\)\{7\}\([^=].\+\)\?$<CR>
 " }}}
 
+" Disable and enable PHP code sniffer
+nnoremap <leader>pcd :let g:syntastic_phpcs_disable=1<CR>
+nnoremap <leader>pce :let g:syntastic_phpcs_disable=0<CR>
+
 " Filetype specific handling {{{
 " only do this part when compiled with support for autocommands
 if has("autocmd")
@@ -239,6 +243,10 @@ let Tlist_Show_One_File = 1
 :endfunction
 :command! -nargs=1 Ltag :call LoadTags("<args>")
 " }}}
+
+" Syntastic
+" Use the Drupal coding standards when running PHP CodeSniffer.
+let g:syntastic_phpcs_conf=" --standard=Drupal --extensions=php,module,inc,install,test,profile,theme"
 
 " Pulse cursor line {{{
 function! PulseCursorLine()
