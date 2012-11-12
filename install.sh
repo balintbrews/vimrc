@@ -16,6 +16,7 @@ die() {
 
 cd "$INSTALL_TO"
 git clone git://github.com/balintk/vimrc.git
+mkdir vimrc/vim/bundle
 cd vimrc/vim/bundle
 
 # Download vim plugin bundles
