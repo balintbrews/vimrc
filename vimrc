@@ -97,7 +97,7 @@ nnoremap <leader>q :q<CR>
 
 " Quickly switch between my favorite light and dark color scheme.
 nnoremap <leader>cl :color solarized<CR>:set background=light<CR>
-nnoremap <leader>cd :color solarized<CR>:set background=dark<CR>
+nnoremap <leader>cd :color jellybeans<CR>:set background=dark<CR>
 
 " Make p in Visual mode replace the selected text with the yank register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
